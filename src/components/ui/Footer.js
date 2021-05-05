@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export const Footer = () => {
-    return (
-        <footer className="page-footer font-small blue mt-5">
-            <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-            </div>
-        </footer>
-    )
-}
+  const year = new Date().getFullYear();
+  return (
+    <footer className="page-footer font-small blue mt-5">
+      <div className="footer-copyright text-center py-3">
+        © {year} Copyright:
+        <a href="#"> salguero.dev</a>
+      </div>
+    </footer>
+  );
+};

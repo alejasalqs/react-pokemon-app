@@ -102,24 +102,10 @@ export const PokemonScreen = () => {
               </button>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             {pokemonList.map((pokemon) => (
               <PokemonCard key={pokemon.name} {...pokemon} />
             ))}
-          </div>
-          <div className="row justify-content-center">
-            <nav aria-label="...">
-              <ul className="pagination justify-content-center">
-                <li className={`page-item`}>
-                  <a className="page-link" tabIndex="-1" aria-disabled="true">
-                    Previous
-                  </a>
-                </li>
-                <li className={`page-item`}>
-                  <a className="page-link">Next</a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </>
       )}
